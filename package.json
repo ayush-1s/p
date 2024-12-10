@@ -1,9 +1,5 @@
-
-
-
 {
   "homepage": "https://ayush-1s.github.io/Portfolio/",
-
   "name": "ayush-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -22,6 +18,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
    
+    
+    
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }

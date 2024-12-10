@@ -1,0 +1,81 @@
+.projects {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f06d06, #ffcc00); /* Beautiful gradient */
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #ffffff; /* White color for header */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    text-decoration: none;
+    color: #333; /* Text color won't be affected by background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    animation: projectFadeIn 1.5s ease-out;
+    border: 2px solid transparent;
+    background-image: linear-gradient(to right, #f06d06, #ffcc00);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffdd59;
+    border-color: #ff6f00;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5em;
+    color: #333; /* Dark text color for the heading */
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .project-card p {
+    font-size: 1.1em;
+    color: #555; /* Light grey text for description */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes projectFadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
